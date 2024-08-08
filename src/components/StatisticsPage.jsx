@@ -16,7 +16,7 @@ const StatisticsPage = () => {
                 <div className="icon mb-4">
                   <img src={stat01} alt="Pizzas" className="mx-auto" />
                 </div>
-                <div className="stat-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[115px] bg-[#4b9438] text-center rounded-full pt-4">
+                <div className="stat-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115px] h-[115px] bg-[#4b9438] text-center rounded-full pt-[3rem]">
                   <OdometerCounter count={350} />
                   <span className="text-3xl font-semibold text-white">K</span>
                   <h3 className="info block mt-2 text-lg leading-[25px] uppercase text-white">
