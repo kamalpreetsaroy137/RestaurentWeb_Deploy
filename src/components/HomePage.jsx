@@ -14,7 +14,10 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div id="home" className="min-h-screen text-white sm:min-h-[60vh] md:min-h-[70vh] ">
+    <div
+      id="home"
+      className="min-h-screen text-white sm:min-h-[60vh] md:min-h-[70vh] "
+    >
       <div className="banner-section bg-[#71b85f] relative overflow-hidden grid grid-cols-1 items-end md:grid-cols-1">
         <img
           src={leftImg}
@@ -42,7 +45,7 @@ const HomePage = () => {
             Always Delivering <br /> Amazing Experience
           </h1>
           <button
-            className="border px-6 py-2 text-[.8rem] md:text-[1rem] pointer font-bold rounded-full mt-4 hover:bg-[#4b9438] hover:text-white transition-colors duration-400 ease-in-out"
+            className="border px-6 text-[.8rem] md:text-[1rem] pointer font-bold rounded-full mt-4 hover:bg-white hover:text-[#71b85f] transition-colors duration-400 ease-in-out"
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
           >
