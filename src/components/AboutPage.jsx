@@ -9,7 +9,7 @@ const AboutPage = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <section id="about" className="relative py-12 px-12">
+    <section id="about" className="relative py-12 px-12 mt-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Column 1 */}

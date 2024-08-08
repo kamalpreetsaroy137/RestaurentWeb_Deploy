@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -15,10 +16,11 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const [activeLink, setActiveLink] = useState(null);
-
   const handleClick = (id) => {
     setActiveLink(id);
+    if (isOpen) {
+      setIsOpen(false);
+    }
   };
 
   return (
@@ -38,12 +40,11 @@ const Navbar = () => {
           </button>
           {/* Navigation Links */}
           <ul
-            className={`md:flex md:space-x-6 md:items-center md:text-white md:text-[1rem] md:font-bold 
-            ${
+            className={`${
               isOpen
-                ? "flex flex-col space-y-4 text-white absolute top-16 left-[-23px] px-12 py-8 w-full bg-[#71b85f] md:static md:flex-row md:space-y-0"
+                ? "flex flex-col space-y-4 gap-4 text-white absolute top-16 left-[-2rem] px-12 py-10 w-full bg-[#71b85f] md:static md:flex-row md:space-y-0"
                 : "hidden"
-            }`}
+            } md:flex md:space-x-6 md:items-center md:text-white md:text-[1rem] md:font-bold`}
           >
             <li>
               <a
@@ -100,11 +101,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <button
-                className="bg-white text-[#71b85f] py-1 px-4 rounded-full
-                hover:bg-[#4b9438] hover:text-white
-                transition-colors duration-400 ease-in-out"
-              >
+              <button className="bg-white text-[#71b85f] py-1 px-4 rounded-full hover:bg-[#4b9438] hover:text-white transition-colors duration-400 ease-in-out">
                 Order Now
               </button>
             </li>

@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div
       id="home"
-      className="min-h-screen text-white sm:min-h-[60vh] md:min-h-[70vh] "
+      className="text-white sm:min-h-[60vh] md:min-h-[70vh] "
     >
       <div className="banner-section bg-[#71b85f] relative overflow-hidden grid grid-cols-1 items-end md:grid-cols-1">
         <img
