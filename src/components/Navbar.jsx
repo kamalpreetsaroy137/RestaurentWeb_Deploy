@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className="bg-[#71b85f] sticky top-0 z-50 px-10 py-4 border-b-[0.1px] border-gray-300 drop-shadow">
       <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto">
         <a href="#home" className="flex items-center">
-          <img src={logo} alt="Logo" className="h-10" />
+          <img src={logo} alt="Logo" className="h-[3rem]" />
         </a>
         <div className="flex items-center space-x-6">
           {/* Hamburger Icon */}
