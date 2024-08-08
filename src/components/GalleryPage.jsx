@@ -5,7 +5,7 @@ import recipe1 from "../assets/recipe1.jpg";
 import recipe2 from "../assets/recipe2.png";
 import recipe3 from "../assets/recipe3.png";
 import recipe4 from "../assets/recipe4.png";
-import recipe5 from "../assets/recipe5.png";
+import recipe5 from "../assets/recipe10.png";
 import recipe6 from "../assets/recipe6.png";
 import recipe7 from "../assets/recipe7.png";
 import recipe8 from "../assets/recipe8.png";
