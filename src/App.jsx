@@ -11,10 +11,12 @@ import TeamPage from "./components/TeamPage.jsx";
 import GalleryPage from "./components/GalleryPage.jsx";
 import FacilitesPage from "./components/Facilities.jsx";
 import FooterPage from "./components/FooterPage.jsx";
+import BackToHome from "./components/BackToHome.jsx";
 
 function App() {
   return (
     <>
+      <BackToHome />
       <Navbar />
       <HomePage />
       <AboutPage />

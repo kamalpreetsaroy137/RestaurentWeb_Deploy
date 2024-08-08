@@ -175,6 +175,40 @@ body {
   }
 }
 
+@keyframes bounceInDown {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.active {
+  transform: translateY(0);
+  animation: bounceInDown 2s;
+  -webkit-animation: bounceInDown 2s;
+  -moz-animation: bounceInDown 2s;
+}
+
 /* .service-box {
   transition: transform 0.3s ease-in-out;
 }
